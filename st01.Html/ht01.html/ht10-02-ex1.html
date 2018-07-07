@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title></title>
+<style>
+    * {border: 1px solid blue; padding: 10px; margin-bottom: 10px;}
+    html,body { height: 100%; }
+    header { border: 1px dotted blue; height: 60px; text-align: center; }
+    nav    { border: 1px dotted blue; text-align: center; }
+
+    #wrapbody {overflow: auto;  }
+    section { border: 1px dotted blue; width: 46%; float: left;  }
+    article { border: 1px dotted blue; width: 80%; margin-left:auto; text-align: center; }
+    aside   { border: 1px dotted blue; width: 46%; height:100%; float: right; text-align: center; }
+    footer { border: 1px dotted blue; }
+
+    .col-container {
+        display: table; /* Make the container element behave like a table */
+        width: 100%; /* Set full-width to expand the whole page */
+    }
+
+    .col {
+        display: table-cell; /* Make elements inside the container behave like table cells */
+    }
+
+    footer {height: 30px; clear: both;}
+</style>
+</head>
+<body>
+    <header>
+       Header
+   </header>
+
+   <nav>Navigation
+   </nav>
+
+   <div id="wrapbody">
+        <section>
+            Section
+            <article>
+                Article>
+            </article>
+            <article>
+                Article>
+            </article>
+        </section>
+        
+        <aside>
+            Aside
+        </aside>
+    </div>
+
+    <footer>
+        Footer
+    </footer>
+</body>
+</html>

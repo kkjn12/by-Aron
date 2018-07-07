@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        label { width:60px; display:inline-block; }
+    <!-- style에 입력하면 전체(모든페이지) 적용한다 -->
+        li {list-style: none;}
+        
+    </style>
+</head>
+<body>
+	<!-- fieldset & legend -->
+    <!-- form 태그 필요 속성 3가지 추가. -->
+	<form action="" method="" enctype="">
+		<fieldset>
+			<legend>입력양식</legend>
+			<ul>
+				<!-- 입력박스 2개/ 앞에Dot제거 style="list-style: none;" -->
+				<li style="list-style: none;">
+					 <label for="name">이름:</label>
+		             <input type="text" name="name" id="name"><br/>
+		        </li>     
+		        <li>     
+		             <label for="email">이메일:</label>
+		             <input type="text" name="name" id="email"><br/>
+				</li>
+		        <li>
+		        	  <!-- 버튼 --> 
+                     <input type="submit" value="쿼리 전송"/><br/>
+		        </li>
+	
+        </fieldset>
+	</form>
+
+</body>
+</html>

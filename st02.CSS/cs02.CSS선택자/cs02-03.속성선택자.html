@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS3 Selector Basic Page</title>
+
+    <style type="text/css">
+
+        p[name       ]  { border: 1px solid red; }
+        p[name="row" ]  { border: 1px solid blue; }
+        p[name!="row"]  { border: 1px solid green; }
+        p[name^="row"]  { border: 1px solid gray; }
+        p[name$="row"]  { border: 1px solid yellow; }
+        p[name*="row"]  { border: 1px solid black; }
+    	p[name~="row"]  { border: 1px solid red; }
+        p[name|="row"]  { border: 1px solid red; }
+
+    </style>
+</head>
+<body>
+     <p name="bow"  >aaa</p>
+     <p name="row"  >aaa</p>
+     <p name="2row1">aaa</p>
+     <p name="row21">aaa</p>
+     <p name="row-" >aaa</p>
+</body>
+</html>

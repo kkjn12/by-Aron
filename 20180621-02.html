@@ -1,0 +1,59 @@
+<!-- HTML5 기본문서의 구조(Document Structure) -->
+<!DOCTYPE html> <!-- HTML5 문서형 선언 -->
+<html lang="ko"> <!-- 2. 언어 한국어(한글) 설정, HTML5 -->
+<head>
+<meta charset="utf-8"> <!-- 3. 문자 조합, 인코딩 설정: utf-8, HTML5 -->
+<meta name="description" content="웹페이지 또는 웹사이트에 대한 짧은 설명글 삽입">
+
+<title>폼(Form) 태그 기초코딩 실습 - textarea / select</title>
+</head>
+<body>
+<h1>textarea / select 요소 기초 실습</h1>
+<form action="board.php" method="post">
+  <fieldset>  <!-- 폼 요소들 그룹화 -->
+    <legend>여러 줄 글상자와 목록상자(콤보 박스 메뉴)</legend> <!-- 그룹 제목 -->
+	    <p>답글<br>
+        <textarea cols="20" rows-"4" name="reply"></textarea>
+		<!-- textarea 요소는 인라인 요소이다. -->
+	</p>
+
+	<p>과목선택
+	    <select> <!-- select 인라인 요소 -->
+		<option value="html5">html5</option>
+		<option value="css3">css3</option>
+		<option value="JavaScript">JavaScript</option>
+		<option value="jquery">jquery</option>
+		<option value="powerpoint">powerpoint</option>
+		<option value="html5">html5</option>
+		</select>
+	</p>
+
+	<p>스터디 지역<br>
+	<select>
+	  <optgroup label="용산구">
+	    <option value="yongsan-01">이촌동</option>
+	    <option value="yongsan-02">한남동</option>
+	    <option value="yongsan-03">청파동</option>
+	  </optgroup>
+	  <optgroup label="관악구">
+	    <option value="gwanak-01">신림동</option>
+	    <option value="gwanak-02">봉천동</option>
+	    <option value="gwanak-03">남현동</option>
+	  </optgroup>
+	  <optgroup label="원미구">
+	    <option value="01">상동</option>
+	    <option value="02">중동</option>
+	    <option value="03">송내동</option>
+	  </optgroup>
+	</select>
+	</p>
+
+</fieldset>
+</form>
+</body>
+</html>
+
+
+
+
+
